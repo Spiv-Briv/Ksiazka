@@ -7,8 +7,51 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
     Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+    <Page.Resources>
+        <x:String x:Key="AppName">Aplikacja</x:String>
+        <ControlTemplate x:Key="EnemyTemplate" TargetType="ContentControl">
+            <Ellipse Height="100" Width="100" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="0" Fill="DarkRed" Stroke="Black"></Ellipse>
+        </ControlTemplate>
 
-    <Grid>
-
+    </Page.Resources>
+    <Grid x:Name="grid" PointerExited="Pexit" PointerMoved="PMoved">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="160"/>
+            <ColumnDefinition/>
+            <ColumnDefinition Width="140"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition/>
+            <RowDefinition Height="160"/>
+        </Grid.RowDefinitions>
+        <Canvas Grid.Column="1" Grid.Row="1" x:Name="playArea">
+            <Canvas.Background>
+                <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                    <GradientStop Color="#FFE2BB02"/>
+                    <GradientStop Color="Red" Offset="1"/>
+                </LinearGradientBrush>
+            </Canvas.Background>
+            <StackPanel x:Name="human" Orientation="Vertical" PointerPressed="Pointer">
+                <Ellipse Fill="White" Stroke="Black" Width="15" Height="15"></Ellipse>
+                <Rectangle Fill="White" Stroke="Black" Width="15" Height="40"></Rectangle>
+            </StackPanel>
+            <Ellipse x:Name="target" Width="50" Height="50" Canvas.Left="835" Canvas.Top="140" PointerEntered="PEnter">
+                <Ellipse.Fill>
+                    <LinearGradientBrush EndPoint="0,1" StartPoint="1,0">
+                        <GradientStop Color="Black"/>
+                        <GradientStop Color="Black" Offset="1"/>
+                        <GradientStop Color="White" Offset="0.5"/>
+                    </LinearGradientBrush>
+                </Ellipse.Fill>
+            </Ellipse>
+            <TextBlock x:Name="GameOverText" FontFamily="Arial Black" FontSize="75" FontWeight="Bold" FontStyle="Italic" Text="Koniec Gry" Canvas.Left="42" Canvas.Top="28"/>
+        </Canvas>
+        <Button x:Name="Start" Content="Start" HorizontalAlignment="Center" Grid.Row="2" Click="Zacznij"/>
+        <ProgressBar x:Name="progress" Grid.Row="2" Grid.Column="1" Height="25"></ProgressBar>
+        <StackPanel Grid.Column="2" Orientation="Vertical" Grid.Row="2">
+            <TextBlock Grid.Row="2" Grid.Column="2" Text="Ich unikaj" HorizontalAlignment="Center" Style="{StaticResource SubheaderTextBlockStyle}"/>
+            <ContentControl Template="{StaticResource EnemyTemplate}" Height="100" Width="140"/>
+        </StackPanel>
     </Grid>
 </Page>
