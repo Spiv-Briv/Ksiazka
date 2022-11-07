@@ -35,6 +35,9 @@
             this.Cash = new System.Windows.Forms.NumericUpDown();
             this.label1 = new System.Windows.Forms.Label();
             this.BankLbl = new System.Windows.Forms.Label();
+            this.Pass = new System.Windows.Forms.Button();
+            this.PassGuy = new System.Windows.Forms.ComboBox();
+            this.PassLbl = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.Cash)).BeginInit();
             this.SuspendLayout();
             // 
@@ -73,7 +76,7 @@
             // 
             this.Wplata.Enabled = false;
             this.Wplata.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
-            this.Wplata.Location = new System.Drawing.Point(197, 120);
+            this.Wplata.Location = new System.Drawing.Point(193, 120);
             this.Wplata.Name = "Wplata";
             this.Wplata.Size = new System.Drawing.Size(175, 100);
             this.Wplata.TabIndex = 3;
@@ -110,11 +113,44 @@
             this.BankLbl.TabIndex = 6;
             this.BankLbl.Text = "Bank";
             // 
+            // Pass
+            // 
+            this.Pass.Enabled = false;
+            this.Pass.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.Pass.Location = new System.Drawing.Point(374, 120);
+            this.Pass.Name = "Pass";
+            this.Pass.Size = new System.Drawing.Size(175, 100);
+            this.Pass.TabIndex = 7;
+            this.Pass.Text = "Przekaż";
+            this.Pass.UseVisualStyleBackColor = true;
+            this.Pass.Click += new System.EventHandler(this.Pass_Click);
+            // 
+            // PassGuy
+            // 
+            this.PassGuy.FormattingEnabled = true;
+            this.PassGuy.Location = new System.Drawing.Point(374, 91);
+            this.PassGuy.Name = "PassGuy";
+            this.PassGuy.Size = new System.Drawing.Size(175, 23);
+            this.PassGuy.TabIndex = 8;
+            this.PassGuy.SelectedIndexChanged += new System.EventHandler(this.PassGuy_SelectedIndexChanged);
+            // 
+            // PassLbl
+            // 
+            this.PassLbl.AutoSize = true;
+            this.PassLbl.Font = new System.Drawing.Font("Segoe UI", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point);
+            this.PassLbl.Location = new System.Drawing.Point(374, 223);
+            this.PassLbl.Name = "PassLbl";
+            this.PassLbl.Size = new System.Drawing.Size(0, 20);
+            this.PassLbl.TabIndex = 9;
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(384, 261);
+            this.ClientSize = new System.Drawing.Size(584, 261);
+            this.Controls.Add(this.PassLbl);
+            this.Controls.Add(this.PassGuy);
+            this.Controls.Add(this.Pass);
             this.Controls.Add(this.BankLbl);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Cash);
@@ -139,5 +175,8 @@
         private NumericUpDown Cash;
         private Label label1;
         private Label BankLbl;
+        private Button Pass;
+        private ComboBox PassGuy;
+        private Label PassLbl;
     }
 }
