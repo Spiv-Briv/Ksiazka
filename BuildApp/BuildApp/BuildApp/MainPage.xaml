@@ -1,0 +1,27 @@
+﻿<Page
+    x:Class="BuildApp.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:BuildApp"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d"
+    Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition/>
+            <ColumnDefinition/>
+        </Grid.ColumnDefinitions>
+        <Button x:Name="p1" Grid.Row="0" Grid.Column="0" Content="Pokaż Komunikat" HorizontalAlignment="Center" Click="p1_Click"></Button>
+        <Button x:Name="p2" Grid.Row="0" Grid.Column="1" Content="if / else" HorizontalAlignment="Center" Click="p2_Click"></Button>
+        <Button x:Name="p3" Grid.Row="1" Grid.Column="0" Content="Sprawdzanie kolejnego warunku" HorizontalAlignment="Center" Click="p3_Click"></Button>
+        <Button x:Name="p4" Grid.Row="1" Grid.Column="1" Content="Pętla" HorizontalAlignment="Center" Click="p4_Click"></Button>
+        <TextBlock x:Name="Lbl" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Center" VerticalAlignment="Center" Style="{StaticResource BodyTextBlockStyle}"></TextBlock>
+    </Grid>
+</Page>
