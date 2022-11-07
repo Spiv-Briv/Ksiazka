@@ -1,0 +1,51 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32929.385
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ZmienTekst", "ZmienTekst\ZmienTekst.csproj", "{089193B0-ABE0-419B-AC20-7DB550A85A98}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|ARM = Debug|ARM
+		Debug|ARM64 = Debug|ARM64
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|ARM = Release|ARM
+		Release|ARM64 = Release|ARM64
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Debug|ARM.ActiveCfg = Debug|ARM
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Debug|ARM.Build.0 = Debug|ARM
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Debug|ARM.Deploy.0 = Debug|ARM
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Debug|ARM64.ActiveCfg = Debug|ARM64
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Debug|ARM64.Build.0 = Debug|ARM64
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Debug|ARM64.Deploy.0 = Debug|ARM64
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Debug|x64.ActiveCfg = Debug|x64
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Debug|x64.Build.0 = Debug|x64
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Debug|x64.Deploy.0 = Debug|x64
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Debug|x86.ActiveCfg = Debug|x86
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Debug|x86.Build.0 = Debug|x86
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Debug|x86.Deploy.0 = Debug|x86
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Release|ARM.ActiveCfg = Release|ARM
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Release|ARM.Build.0 = Release|ARM
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Release|ARM.Deploy.0 = Release|ARM
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Release|ARM64.ActiveCfg = Release|ARM64
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Release|ARM64.Build.0 = Release|ARM64
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Release|ARM64.Deploy.0 = Release|ARM64
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Release|x64.ActiveCfg = Release|x64
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Release|x64.Build.0 = Release|x64
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Release|x64.Deploy.0 = Release|x64
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Release|x86.ActiveCfg = Release|x86
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Release|x86.Build.0 = Release|x86
+		{089193B0-ABE0-419B-AC20-7DB550A85A98}.Release|x86.Deploy.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0EE07BD7-37B7-4DAB-B7DC-5EF7F1BC9259}
+	EndGlobalSection
+EndGlobal
