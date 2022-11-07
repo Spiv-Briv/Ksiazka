@@ -102,7 +102,7 @@
             this.Controls.Add(this.label1);
             this.Controls.Add(this.Input);
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "MessageBox";
             ((System.ComponentModel.ISupportInitialize)(this.Times)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
